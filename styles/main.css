@@ -1,0 +1,294 @@
+body{
+  margin:0;
+  padding:0;
+  font-size: 16px;
+  color : white;
+  background-color: black;
+  font-family: 'VT323', monospace;
+}
+
+audio{
+  display: block;
+}
+
+
+/* HEADER*/
+
+.firstMenu{
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+
+.firstMenu h2{
+  font-size: 60px;
+  color : white;
+  margin : 0 auto;
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  margin-bottom: 30px;
+}
+
+#logo{
+  width: 40%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.howToPlayPop{
+  width : 16%;
+  height : 60px;
+
+  position: fixed;
+  left : 100%;
+  top : 10%;
+  background-color: red;
+  border-radius: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+
+.howToPlayPop a{
+  text-decoration: none;
+  color : white;
+  font-size: 24px;
+}
+
+.howToPlayPop a:hover{
+  text-decoration : underline;
+}
+
+
+.howToPlayPop img{
+  width : 30px;
+  height: 30px;
+}
+
+
+
+/* HAMBURGER */
+
+#hamburger{
+  opacity : 0;
+  left : 30px;
+  top : 30px;
+  width : 50px;
+  height: 50px;
+  position : fixed;
+}
+#blackHamburger{
+  opacity : 0;
+  transition : all 2.5s;
+  left : 30px;
+  top : 30px;
+  width : 50px;
+  height: 50px;
+  position : absolute;
+}
+
+.containerHamburger{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.hamburgerMenu{
+    z-index : 2;
+  display : block;
+  right :100%;
+  transition: all 1s;
+  top : 0px;
+  position: fixed;
+  width : 200px;
+  height: 700px;
+  background: linear-gradient(#6b6969, #bebdbd);
+}
+
+.menuHamburgerOnglets{
+  padding-top : 140px;
+}
+
+.menuHamburgerOnglets ul li{
+  list-style: none;
+  padding: 20px 0px;
+}
+
+.menuHamburgerOnglets ul li a{
+  color : black;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.menuHamburgerOnglets ul li a:hover{
+  color : white;
+  transition: all .3s;
+}
+
+/* SLIDER */
+
+.slider{
+  height: 300px;
+  opacity: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  transition: all 2s;
+  overflow: hidden;
+}
+
+.sliderContainer{
+  width: 100%;
+  left : 30%;
+  position: absolute;
+  top : 0px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 0px;
+  transition: all 1s;
+}
+
+.sliderContainer img{
+  width : 30%;
+  height: 250px;
+  opacity : .7;
+}
+
+.sliderContainer img:hover{
+  opacity : .9;
+  transition: all .4s;
+}
+
+.sliderContainer .currentImg{
+  opacity: 1;
+  width : 40%;
+  height: 300px;
+}
+
+/* MAIN */
+
+.levelChoice{
+  display: flex;
+  justify-content: center;
+}
+
+.levelChoice h4{
+  font-size: 25px;
+}
+
+.divButton{
+  display: flex;
+  justify-content: center;
+}
+
+#button{
+  margin : 0 auto;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  width : 250px;
+  height: 100px;
+  background-color: red;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border : 0px solid white;
+  z-index : 100;
+}
+
+#button:hover{
+  border : 3px solid white;
+  transition:all 0.2s;
+}
+
+#button a{
+  color : white;
+  text-decoration: none;
+  font-size: 50px;
+}
+
+.teaser{
+  display: none;
+  width: 100%;
+  padding-bottom : 20px;
+  margin: 0 auto;
+}
+
+h3{
+  width : 140px;
+  padding-top : 40px;
+  padding-bottom: 30px;
+  width: 200px;
+  margin: 0 auto;
+  font-size: 55px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+#textTeaser{
+  width: 60%;
+  margin: 0px 20%;
+  font-size: 25px;
+  text-justify : inter-word;
+}
+
+
+.divHowToPlay{
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  padding-top : 40px;
+  padding-bottom: 50px;
+}
+
+#howToPlay{
+  font-size: 28px;
+  color : white
+}
+
+#howToPlay:hover{
+  color : grey;
+}
+
+
+
+@media screen and (max-width : 990px){
+  .firstMenu h2{
+    font-size: 50px;
+    color : white;
+    margin : 0 auto;
+  }
+
+}
+
+@media screen and (max-width : 826px){
+  .firstMenu h2{
+    font-size: 40px;
+    color : white;
+    margin : 0 auto;
+  }
+}
+
+@media screen and (max-width : 662px){
+  .firstMenu h2{
+    font-size: 25px;
+    color : white;
+    margin : 0 auto;
+  }
+  #logo{
+    width: 510px;
+    height: 170px;
+    margin : 30px;
+  }
+}
